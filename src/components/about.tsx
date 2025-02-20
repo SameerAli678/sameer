@@ -1,6 +1,5 @@
 import React from "react";
 import RESUME from "@/../public/image/RESUME.png";
-import Skills from "@/../public/image/skill.png";
 import { FaArrowRight } from "react-icons/fa";
 
 import Image from "next/image";

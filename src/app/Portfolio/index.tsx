@@ -4,18 +4,9 @@ import { PiPhoneTransferLight } from "react-icons/pi";
 import Image from "next/image";
 import coding from "@/../public/image/Coding.png";
 
-import html from "@/../public/image/html.png";
-import css from "@/../public/image/css.png";
-import git from "@/../public/image/git.webp";
-import github from "@/../public/image/github.svg";
-import javascript from "@/../public/image/javascript.webp";
-import typescript from "@/../public/image/typescript.png";
-import react from "@/../public/image/react.png";
-import next from "@/../public/image/next.png";
 import ContactFrom from "@/components/contact-from";
 import { FaArrowRight } from "react-icons/fa";
 import About from "@/components/about";
-import ScrollToSkills from "@/components/b";
 import Skills from "@/components/skills";
 import Footer from "@/components/footer";
 
@@ -76,9 +67,9 @@ const Portfolio = () => {
           </h1>
           <p className="flex text-[#FF9C01]">Web Designer</p>
           <p className="flex justify-center text-start text-sm">
-            I'm A Nigerian based webs designer and front-end developer
+            I am A Nigerian based webs designer and front-end developer
             <br />
-            focused on creating a clean & user friendly experiences. I am <br />{" "}
+            focused on creating a clean & user friendly experiences. I am <br />
             passionate about building excellent software that improves
             <br /> the lives of those around me.
           </p>
