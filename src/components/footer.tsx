@@ -1,13 +1,16 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import github from "@/../public/image/github.svg";
-
 const Footer = () => {
   return (
     <div className="flex flex-col bg-blue w-full text-[#c4c0c0] items-center gap-9 p-6">
       {/* github  */}
       <div className="flex flex-col sm:flex-row items-center m-auto sm:gap-40 xl:gap-[700px]">
-        <div className="flex flex-col items-center">
+        <div
+          className="flex flex-col items-center"
+          onClick={() => window.open("https://github.com/SameerAli678")}
+        >
           <Image
             src={github}
             alt="html"

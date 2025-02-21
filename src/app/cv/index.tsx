@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { PiPhoneTransferLight } from "react-icons/pi";
 import Image from "next/image";
 import coding from "@/../public/image/Coding.png";
 
@@ -9,48 +8,17 @@ import { FaArrowRight } from "react-icons/fa";
 import About from "@/components/about";
 import Skills from "@/components/skills";
 import Footer from "@/components/footer";
+import Portfolio from "@/components/Portfolio";
+import Navbar from "@/components/navbar";
 
-const Portfolio = () => {
-  const scrollToSkills = () => {
-    const skillsSection = document.getElementById("skills");
-    if (skillsSection) {
-      skillsSection.scrollIntoView({ behavior: "smooth" });
-    } else {
-      console.error("Skills section not found!");
-    }
-  };
-  const contact = () => {
-    const skillsSection = document.getElementById("Contact-From");
-    if (skillsSection) {
-      skillsSection.scrollIntoView({ behavior: "smooth" });
-    } else {
-      alert("con section not found!");
-    }
-  };
+const CV = () => {
   return (
-    <div>
+    <div className="">
       {/* Start navbar  */}
-      <nav className=" fixed  grid md:grid-cols-2 bg-blue   w-full py-6 gap-y-6 items-center justify-items-center z-50 top-0">
-        <h1 className="flex text-3xl text-[#FF9C01] font-bold ">Sameer Ali</h1>
-        <div className="flex gap-x-5 text-white ">
-          <button
-            className="flex border border-white rounded-full p-2 px-7 text-lg "
-            onClick={scrollToSkills}
-          >
-            Skills
-          </button>
-          <button
-            className="flex border border-white rounded-full p-2 px-9 text-lg items-center gap-2 "
-            onClick={contact}
-          >
-            <PiPhoneTransferLight />
-            Contact us
-          </button>
-        </div>
-      </nav>
+      <Navbar />
       {/* End navbar */}
       {/* Start hero section */}
-      <div className="grid md:grid-cols-2 bg-[#E8DCDC]  justify-items-center items-center p-20 gap-9">
+      <div className="grid md:grid-cols-2 bg-[#E8DCDC]  justify-items-center items-center p-10 gap-9 ">
         <div className=" flex pt-12 ">
           <Image
             src={coding}
@@ -86,6 +54,8 @@ const Portfolio = () => {
       {/*End About us  */}
       {/* start Skills  */}
       <Skills />
+      {/* Portfolio */}
+      <Portfolio />
       {/* ContactFrom */}
       <ContactFrom />
       <Footer />
@@ -93,5 +63,5 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default CV;
 // bg-[#7784A3]

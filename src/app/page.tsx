@@ -1,9 +1,9 @@
-import Portfolio from "./Portfolio";
+import CV from "./cv";
 
 export default function Home() {
   return (
-    <div>
-      <Portfolio />
+    <div className="">
+      <CV />
     </div>
   );
 }
