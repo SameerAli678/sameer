@@ -1,10 +1,12 @@
 import React from "react";
 import RESUME from "@/../public/image/RESUME.png";
-// import cv from "@/../public/cv/sameerali.pdf";
+// import cv from "@/../public/cv/SameerAliCV.pdf";
+// import sam from "@/../public/cv/";
 // import cv from "@/../public/cv/"
 import { FaArrowRight } from "react-icons/fa";
 
 import Image from "next/image";
+import Link from "next/link";
 // import CV from "@/app/cv";
 
 const About = () => {
@@ -18,15 +20,9 @@ const About = () => {
   // };
   return (
     <div>
-      <div className="grid   bg-[#D9D9D9] p-9 ">
+      <div className="grid bg-[#D9D9D9] p-9 ">
         <div className=" relative flex  justify-center pt-5">
-          <Image
-            src={RESUME}
-            alt="RESUME"
-            width={500}
-            height={300}
-            className=""
-          />
+          <Image src={RESUME} alt="RESUME" width={500} height={300} />
           <div className="absolute text-3xl md:text-6xl top-7 ">
             ABOUT<span className="text-orange">ME</span>
           </div>
@@ -73,17 +69,18 @@ const About = () => {
           {/* button  */}
           <div className="grid md:grid-cols-2 items-center gap-x-36 gap-y-5">
             {/* <a href={cv}  download="sameerali.pdf"> */}
-            <button
-              className=" relative flex border-2 border-orange px-8 rounded-2xl py-1 hover:text-white bg-white hover:bg-[#f0a275] transition duration-300 hover:scale-90 w-fit md:order-1 order-2"
-              // onClick={handleDownload}
-            >
-              Download CV
-              <div className="bg-orange rounded-full p-[11px] absolute -right-5 items-center -top-1 ">
-                <FaArrowRight />
-              </div>
+
+            <button className=" relative flex border-2 border-orange px-8 rounded-2xl py-1 hover:text-white bg-white hover:bg-[#f0a275] transition duration-300 hover:scale-90 w-fit md:order-1 order-2">
+              <a href={"/cv/cv.pdf"} download>
+                Download CV
+                <div className="bg-orange rounded-full p-[11px] absolute -right-5 items-center -top-1 ">
+                  <FaArrowRight />
+                </div>
+              </a>
             </button>
+
             {/* </a> */}
-           
+
             {/* Experience */}
             <div className=" w-fit border border-orange p-9 md:order-2 order-1 bg-white rounded-md hover:scale-110  ">
               <span className="text-3xl text-orange">1+</span>
