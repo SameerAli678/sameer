@@ -6,7 +6,7 @@ import RESUME from "@/../public/image/RESUME.png";
 import { FaArrowRight } from "react-icons/fa";
 
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 // import CV from "@/app/cv";
 
 const About = () => {
