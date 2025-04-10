@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import coding from "@/../public/image/Coding.png";
-
 import ContactFrom from "@/components/contact-from";
 import { FaArrowRight } from "react-icons/fa";
 import About from "@/components/about";
@@ -11,14 +10,14 @@ import Footer from "@/components/footer";
 import Portfolio from "@/components/Portfolio";
 import Navbar from "@/components/navbar";
 
-const CV = () => {
+const Cv = () => {
   return (
     <div className="">
       {/* Start navbar  */}
       <Navbar />
       {/* End navbar */}
       {/* Start hero section */}
-      <div className="grid md:grid-cols-2 bg-[#E8DCDC]  justify-items-center items-center p-10 gap-9 ">
+      <div className="grid md:grid-cols-2 bg-[#E8DCDC] justify-items-center items-center p-10 gap-9">
         <div className=" flex pt-12 ">
           <Image
             src={coding}
@@ -63,5 +62,5 @@ const CV = () => {
   );
 };
 
-export default CV;
+export default Cv;
 // bg-[#7784A3]
