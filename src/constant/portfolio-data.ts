@@ -27,13 +27,13 @@ export const PortfolioData = [
     tittle: "Counter",
     text: "This is Counter You can add 1 and remove 1  or\n can remove all in once created in Sep 13, 2024\n using HTML, Tailwind & JavaScript",
     button: "view project",
-    link: "https://sameerali678.github.io/counter/",
+    link: "https://sameerali678.github.io/Counter/",
   },
   {
     tittle: "Digital Watch",
     text: "This is a Digital Watch end the best watch in my\n repo  created in Nov 30, 2024 using HTML,\n Tailwind & JavaScript",
     button: "view project",
-    link: "https://sameerali678.github.io/digital-watch/",
+    link: "https://sameerali678.github.io/Digital-Watch/",
   },
   {
     tittle: "Chase board",
